@@ -12,7 +12,8 @@ As a group or individually create a public repo on github.
 Then create your own file with your solutions.  Please include
 the name of each team member. 
 
-* TODO Welcome to the world of unicorns, goblins
+* DONE Welcome to the world of unicorns, goblins
+  CLOSED: [2018-05-04 Fri 09:32]
   :LOGBOOK:
   CLOCK: [2018-05-03 Thu 22:33]--[2018-05-03 Thu 22:35] =>  0:02
   :END:
@@ -24,15 +25,27 @@ B says: A and I are opposite type.
 What is A : Goblin
 What is B:  Goblin
 
-* TODO 8 duds and 1 armed bomb.
+* DONE 8 duds and 1 armed bomb.
+  CLOSED: [2018-05-04 Fri 09:36]
+  :LOGBOOK:
+  CLOCK: [2018-05-04 Fri 09:32]--[2018-05-04 Fri 09:36] =>  0:04
+  :END:
 Some idiot forgot to disarm a bomb that is laid in the 'decomisioned' bomb pile.
 Unfortunately the only way to tell which bomb is armed is to use a special weighing system.
 To add insult to injury we don't know if the armed bomb weighs less or more on the system just that it weighs differently.
 But there is yet another catch the weighing system only have two charges left, but it can weight any number of bombs at once.
 Your job is to tell which 1 bomb out of the 9 bombs is armed while only using the weighing machine twice.
 
+According to the change made in class where the armed bomb is known to be heavier, the problem becomes much easier to solve.
+The nine bombs should be divided into three piles of three each and two of the piles placed on the scale. There are two
+possiblities in this scenario, one of the piles on the scale is heavier, or they are equal in weight. If there is one 
+that is heavier, it contains the armed bomb, otherwise the pile left out contains it. Once that is done there are only
+three possible bombs that could be armed. Two of them are placed on the scale and one is left out. If one of the weighed
+bombs is heavier, it is the armed bomb, otherwise the one left out is the armed one.
+
 * TODO The BEAST
   :LOGBOOK:
+  CLOCK: [2018-05-04 Fri 09:39]--[2018-05-04 Fri 09:45] =>  0:06
   CLOCK: [2018-05-03 Thu 23:04]--[2018-05-03 Thu 23:11] =>  0:07
   CLOCK: [2018-05-03 Thu 22:44]--[2018-05-03 Thu 22:46] =>  0:02
   :END:
@@ -70,108 +83,203 @@ Solution
 |         10 |           |        |        |
 
 * TODO Exercises
-In 01-ponder do every third exercise. 
-That is if you start at the first or 1st then you need to do 4th,
-but if you start at 3rd then you need to do the 6th.
+  :LOGBOOK:
+  CLOCK: [2018-05-04 Fri 10:45]--[2018-05-04 Fri 10:47] =>  0:02
+  :END:
+  In 01-ponder do every third exercise. 
+  That is if you start at the first or 1st then you need to do 4th,
+  but if you start at 3rd then you need to do the 6th.
 
-You must put them in this file!
+  You must put them in this file!
+** DONE ODS
+   CLOSED: [2018-05-04 Fri 10:52]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 10:47]--[2018-05-04 Fri 10:52] =>  0:05
+   :END:
+#+begin_note
+  Which of the following sentences are propositions? For each proposition, give
+  its truth value (true or false).
+  1. 2 + 2 = 4.
+  2. 2 + 1 = 4.
+  3. Toronto is the capital of Germany.
+  4. Read these questions carefully.
+  5. x + y + z = q.
+  6. What time is it?
+  7. 2x + 3 = 9.
+  8. Simon says jump.
+#+end_note
+#+begin_info
+  1. Prepostion: True
+  2. Preposition: False
+  3. Preposition: False
+  4. Not a Preposition
+  5. Not a Preposition
+  6. Not a Preposition
+  7. Not a Preposition
+  8. Not a Preposition
+#+end_info
+** DONE UWM
+   CLOSED: [2018-05-04 Fri 11:01]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 10:53]--[2018-05-04 Fri 11:01] =>  0:08
+   :END:
+#+begin_note
+  Express in English the negation of each of these propositions:
 
+  1. Two plus two equals four.
+  2. Two plus one is less than four.
+  3. Toronto is the capital of Germany.
+  4. A total eclipse happens infrequently.
+  5. Special measures must be taken to deal with the current situation.
+:HINT:
+  Do /not/ just prefix each proposition with \lsquo{}It is not the case that\rsquo.
+:END:
+#+end_note
+#+begin_info
+  1. Two plus two does not equal four.
+  2. Two plus one is greater than four.
+  3. Toronto is not the capital of Germany.
+  4. A total eclipse happens frequently.
+  5. Special measures do not need to be taken to deal with the current situation. 
+#+end_info
+** DONE OTX
+   CLOSED: [2018-05-04 Fri 11:03]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 11:01]--[2018-05-04 Fri 11:03] =>  0:02
+   :END:
+#+begin_note
+  Determine whether these sentences use an inclusive or, or an exclusive or:
+  1. A side of fries or chips comes with your sandwich.
+  2. A high school diploma or a GED are needed for this position.
+  3. To get your license, you must provide your social security card or birth certificate.
+  4. We accept Mastercard or Visa credit cards.
+  5. You can cash in your tickets or exchange them for a prize.
+  6. Take it or leave it.
+#+end_note
+#+begin_info
+  1.Exclusive Or
+  2.Inclusive Or
+  3.Inclusive Or
+  4.Inclusive Or
+  5.Exclusive Or
+  6.Exclusive Or  
+#+end_info
+** TODO OJL
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 12:00]--[2018-05-04 Fri 12:16] =>  0:16
+   :END:
+#+begin_note
+  Justify where $p = x \in A, q = x \in B, r = x \in C$:
+
+  | Set | As Union of   | Logic \equiv Set Operation Description                                             |
+  |-----+---------------+-------------------------------------------------------------------------------|
+  | A   | 4 \cup 5 \cup 7 \cup 6 | $(p \land \lnot q \land \lnot r) \lor (p \land \lnot q \land r) \lor (p \land q \land r) \lor (p \land q \land \lnot r)$ |
+  | B   | 2 \cup 3 \cup 7 \cup 6 | $(\lnot p \land q \land \lnot r) \lor (\lnot p \land q \land r) \lor (p \land q \land r) \lor (p \land q \land \lnot r)$ |
+  | C   | 1 \cup 3 \cup 5 \cup 7 | $(\lnot p \land \lnot q \land r) \lor (\lnot p \land q \land r) \lor (p \land \lnot q \land r) \lor (p \land q \land r)$ |
+:HINT:
+  - Hint :: The exercise could be more explicitly stated as: Provide
+            justification for the equivalence of the logical and set operation
+            description (columns 3 and 2) for each set (column 1) in the table.
+            So, use wording like \ldquo{}Set A is justified as the union of numbered
+            regions 4, 5, 7 and 6, because \dots\rdquo.
+:END:
+#+end_note
+#+begin_info
+  Set A is justified as the union of numbered regions 4, 5, 7, and 6 because
+
+  Set B is justified as the union of numbered regions 2, 3, 7, and 6 because
+
+  Set C is justified as the union of numbered regions 1, 3, 5, and 7 because
+
+#+end_info
+** DONE UTQ
+   CLOSED: [2018-05-04 Fri 11:10]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 11:07]--[2018-05-04 Fri 11:10] =>  0:03
+   :END:
+#+begin_note
+  Let /p/ and /q/ be the propositions:
+
+  /p/: You applied for admission at BYU-Idaho.
+
+  /q/: You were accepted.
+
+  Express these sentences as propositions using logical connectives.
+  1. You applied for admission at BYU-Idaho and were accepted.
+  2. You did not apply for admission at BYU-Idaho but were still accepted.
+  3. You applied for admission at BYU-Idaho but were not accepted.
+  4. Either you did not apply for admission at BYU-Idaho and didn\rsquo{}t get accepted
+     or you did apply and got accepted.
+#+end_note
+#+begin_info
+  1. p ^ q
+  2. ~p ^ q
+  3. p ^ ~q
+  4. (~p ^ ~q) V (p ^ q) 
+#+end_info
+** DONE UWY
+   CLOSED: [2018-05-04 Fri 11:35]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 11:12]--[2018-05-04 Fri 11:35] =>  0:23
+   :END:
+#+begin_note
+  Use truth tables to verify the distributive laws.
+  1. $p \wedge (q \lor r) \equiv (p \wedge q) \lor (p \wedge r)$.
+  2. $p \vee (q \wedge r) \equiv (p \vee q) \wedge (p \vee r)$.
+#+end_note
+#+begin_info
+  1.  p | q | r | q V r | p ^ (q V r) |  =  | p | q | r | p ^ q | p ^ r | (p ^ q) V (p ^ r) |
+      
+      | 0 0 0 0 0 |   | 0 0 0 0 0 0 |
+      | 0 0 1 1 0 |   | 0 0 1 0 0 0 |
+      | 0 1 0 1 0 |   | 0 1 0 0 0 0 |
+      | 0 1 1 1 0 |   | 0 1 1 0 0 0 |
+      | 1 0 0 0 0 |   | 1 0 0 0 0 0 |
+      | 1 0 1 1 1 |   | 1 0 1 0 1 1 |
+      | 1 1 0 1 1 |   | 1 1 0 1 0 1 |
+      | 1 1 1 1 1 |   | 1 1 1 1 1 1 |
+
+  2.  p | q | r | q ^ r | p V (q ^ r) |  =  | p | q | r | p V q | p V r | (p V q) ^ (p V r) |
+
+     | 0 0 0 0 0 |   | 0 0 0 0 0 0 |
+     | 0 0 1 0 0 |   | 0 0 1 0 1 0 |
+     | 0 1 0 0 0 |   | 0 1 0 1 0 0 |
+     | 0 1 1 1 1 |   | 0 1 1 1 1 1 |
+     | 1 0 0 0 1 |   | 1 0 0 1 1 1 |
+     | 1 0 1 0 1 |   | 1 0 1 1 1 1 |
+     | 1 1 0 0 1 |   | 1 1 0 1 1 1 |
+     | 1 1 1 1 1 |   | 1 1 1 1 1 1 |
+#+end_info
+** DONE OYP
+   CLOSED: [2018-05-04 Fri 11:59]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 11:51]--[2018-05-04 Fri 11:59] =>  0:08
+   :END:
+#+begin_note
+  Match the following set identities with their counterparts in the
+  miscellaneous logic laws:
+
+  1. A \cap U = A
+  2. A \cup U = U.
+  3. A \cup \empty = A.
+  4. A \cap \empty = \empty.
+  5. $\overline{\overline{\mathsf{A}}} = \mathsf{A}$.
+#+end_note
+#+begin_info
+  1. Idemopotence
+  2. Absorption 
+  3. Idempotence
+  4. Absorption
+  5. Double Negation
+#+end_info
 * DO NOT INCLUDE THIS PART BELOW FOR THE LAB
 * ######## FOR PUZZLES AND PROJECTS #########
-A more Brother Neff-like assignment, with a Brother Benning twist!
+  A more Brother Neff-like assignment, with a Brother Benning twist!
 
-Please Complete all Problems and Puzzles including the 'optional ones', but skipping the exercises.
-I would recommend working together.  As always I will give out hints
-periodically.
+  Please Complete all Problems and Puzzles including the 'optional ones', but skipping the exercises.
+  I would recommend working together.  As always I will give out hints
+  periodically.
 
-(NOTE:I would keep all your exercises/problems/puzzles you do, if you
-take DM 2, you may find these extreeeeeeeeeemly helpful, or not)
-=======
-#+TITLE: DM1 Week 01 Lab01
-#+LANGUAGE: en
-#+OPTIONS: H:4 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t LaTeX:t
-#+OPTIONS: html-postamble:nil
-#+STARTUP: showeverything entitiespretty
-#+SETUPFILE: ../theme-bigblow.setup
-
-Please Set Timers, They will be part of your grade.
-
-As a group or individually create a public repo on github.
-Then create your own file with your solutions.  Please include
-the name of each team member. 
-
-* DONE Welcome to the world of unicorns, goblins
-  CLOSED: [2018-05-04 Fri 09:21]
-  :LOGBOOK:
-  CLOCK: [2018-05-03 Thu 22:33]--[2018-05-03 Thu 22:35] =>  0:02
-  :END:
-In this world unicorns only tell the truth.
-Goblins only lie.
-A says: B is a unicorn.
-B says: A and I are opposite type.
-
-What is A : Goblin
-What is B:  Goblin
-
-* DONE 8 duds and 1 armed bomb.
-  CLOSED: [2018-05-04 Fri 09:26]
-  :LOGBOOK:
-  CLOCK: [2018-05-04 Fri 09:22]--[2018-05-04 Fri 09:26] =>  0:04
-  :END:
-Some idiot forgot to disarm a bomb that is laid in the 'decomisioned' bomb pile.
-Unfortunately the only way to tell which bomb is armed is to use a special weighing system.
-To add insult to injury we don't know if the armed bomb weighs less or more on the system just that it weighs differently.
-But there is yet another catch the weighing system only have two charges left, but it can weight any number of bombs at once.
-Your job is to tell which 1 bomb out of the 9 bombs is armed while only using the weighing machine twice.
-
-In class we worked out that you can divide the bombs into three piles with three bombs in each. Placing two of the piles on the
-scale has two options, either one side is heavier than the other or they are equal. Given the change made in class where the armed
-bomb is known to be heavier rather than just different, either the pile that is shown to ber heavier or the pile not weighed
-is the pile that includes the bomb. Now, similar to the first step, two of the bombs are weighed while one is left out. If one
-of the bombs on the scale is heavier, it is the armed bomb, otherwise, the bomb left out is the armed one.
-
-
-* TODO The BEAST
-The Shoe Shack has made several top-dollar sales today. 
-Using only the clues below, match each customer to their foot size, 
-shoe brand and final purchase price.
-
-No option in any category will ever be used more than once.  
-
-1. The $185 pair was 4 sizes smaller than Natalie's pair.
-2. The Cormano footwear was somewhat smaller than the Williford footwear.
-3. The Schtillet footwear was somewhat larger than Marie's pair.
-4. The $125 pair was somewhat larger than Marie's pair.
-5. Lucia's pair wasn't made by Tinghill.
-6. Of the $185 pair and the size 9 set, one was bought by Francine and the other was by Graffetz.
-7. The $245 pair wasn't made by Tinghill.
-8. The $260 pair was 2 sizes larger than Vanessa's pair.
-9. The Williford footwear was 1 size smaller than Francine's pair.
-10. The $125 pair was 2 sizes smaller than Ruth's pair.
-11. The $215 pair was 5 sizes smaller than the $170 pair.
-12. The $185 pair was 2 sizes smaller than Lucia's pair.
-13. The Schtillet footwear was either Ruth's pair or the size 5 set.
-14. The Abbott Hill footwear was 5 sizes larger than the $215 pair.
-15. The Williford footwear was 1 size smaller than the $245 pair.
-
-Solution
-
-| Shoe Sizes | Customers | Brands | Prices |
-|          4 |           |        |        |
-|          5 |           |        |        |
-|          6 |           |        |        |
-|          7 |           |        |        |
-|          8 |           |        |        |
-|          9 |           |        |        |
-|         10 |           |        |        |
-
-* ######## FOR PUZZLES AND PROJECTS #########
-A more Brother Neff-like assignment, with a Brother Benning twist!
-
-Please Complete all Problems and Puzzles including the 'optional ones', but skipping the exercises.
-I would recommend working together.  As always I will give out hints
-periodically.
-
-(NOTE:I would keep all your exercises/problems/puzzles you do, if you
-take DM 2, you may find these extreeeeeeeeeemly helpful, or not)
->>>>>>> origin/master
+  (NOTE:I would keep all your exercises/problems/puzzles you do, if you
+  take DM 2, you may find these extreeeeeeeeeemly helpful, or not)
+  =======
