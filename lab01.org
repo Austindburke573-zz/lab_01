@@ -100,7 +100,8 @@ As a group or individually create a public repo on github.
 Then create your own file with your solutions.  Please include
 the name of each team member. 
 
-* TODO Welcome to the world of unicorns, goblins
+* DONE Welcome to the world of unicorns, goblins
+  CLOSED: [2018-05-04 Fri 09:21]
   :LOGBOOK:
   CLOCK: [2018-05-03 Thu 22:33]--[2018-05-03 Thu 22:35] =>  0:02
   :END:
@@ -112,12 +113,23 @@ B says: A and I are opposite type.
 What is A : Goblin
 What is B:  Goblin
 
-* TODO 8 duds and 1 armed bomb.
+* DONE 8 duds and 1 armed bomb.
+  CLOSED: [2018-05-04 Fri 09:26]
+  :LOGBOOK:
+  CLOCK: [2018-05-04 Fri 09:22]--[2018-05-04 Fri 09:26] =>  0:04
+  :END:
 Some idiot forgot to disarm a bomb that is laid in the 'decomisioned' bomb pile.
 Unfortunately the only way to tell which bomb is armed is to use a special weighing system.
 To add insult to injury we don't know if the armed bomb weighs less or more on the system just that it weighs differently.
 But there is yet another catch the weighing system only have two charges left, but it can weight any number of bombs at once.
 Your job is to tell which 1 bomb out of the 9 bombs is armed while only using the weighing machine twice.
+
+In class we worked out that you can divide the bombs into three piles with three bombs in each. Placing two of the piles on the
+scale has two options, either one side is heavier than the other or they are equal. Given the change made in class where the armed
+bomb is known to be heavier rather than just different, either the pile that is shown to ber heavier or the pile not weighed
+is the pile that includes the bomb. Now, similar to the first step, two of the bombs are weighed while one is left out. If one
+of the bombs on the scale is heavier, it is the armed bomb, otherwise, the bomb left out is the armed one.
+
 
 * TODO The BEAST
 The Shoe Shack has made several top-dollar sales today. 
@@ -153,14 +165,6 @@ Solution
 |          9 |           |        |        |
 |         10 |           |        |        |
 
-* TODO Exercises
-In 01-ponder do every third exercise. 
-That is if you start at the first or 1st then you need to do 4th,
-but if you start at 3rd then you need to do the 6th.
-
-You must put them in this file!
-
-* DO NOT INCLUDE THIS PART BELOW FOR THE LAB
 * ######## FOR PUZZLES AND PROJECTS #########
 A more Brother Neff-like assignment, with a Brother Benning twist!
 
